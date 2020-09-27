@@ -1,6 +1,6 @@
 {
   "name": "hashnet-broker-simple-peer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "simple-peer broker for hashnet",
   "main": "src/node.js",
   "browser": "src/common.js",
