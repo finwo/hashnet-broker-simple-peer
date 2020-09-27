@@ -2,9 +2,10 @@
   "name": "hashnet-broker-simple-peer",
   "version": "0.0.1",
   "description": "simple-peer broker for hashnet",
-  "main": "index.js",
+  "main": "src/node.js",
+  "browser": "src/common.js",
   "scripts": {
-    "test": "tape mock/**/*.test.js src/**/*.test.js",
+    "test": "tape src/**/*.test.js",
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{print $2}' | sed 's/[\",]//g' | tr -d '[[:space:]]') && npm deprecate \"hashnet-broker-simple-peer@<${PACKAGE_VERSION}\" \"Rolling release, please update to ${PACKAGE_VERSION}\""
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/finwo/hashnet-broker-simple-peer#readme",
   "devDependencies": {
+    "hashnet": "^0.3.7",
     "tape": "^5.0.1"
   },
   "funding": {
@@ -26,5 +28,11 @@
   "keywords": [
     "hashnet",
     "broker"
-  ]
+  ],
+  "dependencies": {
+    "simple-peer": "^9.7.2",
+    "simple-peer-bootstrap": "^0.1.6",
+    "url-parse": "^1.4.7",
+    "wrtc": "^0.4.6"
+  }
 }
