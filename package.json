@@ -30,9 +30,9 @@
     "broker"
   ],
   "dependencies": {
-    "simple-peer": "^9.7.2",
+    "simple-peer": "^9.11.0",
     "simple-peer-bootstrap": "^0.1.6",
-    "url-parse": "^1.4.7",
-    "wrtc": "^0.4.6"
+    "url-parse": "^1.5.1",
+    "wrtc": "^0.4.7"
   }
 }
